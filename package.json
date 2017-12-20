@@ -1,0 +1,17 @@
+{
+  "name": "curso-webpack",
+  "version": "1.0.0",
+  "description": "curso de webpack platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Carlos Perez",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "3.10.0"
+  }
+}
