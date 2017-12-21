@@ -5,8 +5,18 @@ module.exports = {
   // webpack.config.js
   entry:path.resolve(__dirname, 'index.js'),
   output:{
-    // nos indica donde queremos guarda nuestra salida 
     path: path.resolve(__dirname, 'dist'),
     filename:'bundle.js'
+  },
+  module:{
+    rules:[
+      //Aquí van los loader
+      {
+        //test: tipo de archivo a reconocer (usando expreciones regualares),
+        //use: que loader se va a encargara del archuivo
+        test: /\.css$/,
+        use:['style-loader', 'css-loader'],
+      }
+    ]
   }
 }
