@@ -12,7 +12,8 @@
     "build:extract-css": "webpack --config ./plugin-extract-text/webpack.config.js",
     "build:multiples-entrypoints": "webpack --config ./multiples-entrypoints/webpack.config.js",
     "build:dev": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js",
-    "build:babel": "webpack --config ./babel-loader/webpack.config.js"
+    "build:babel": "webpack --config ./babel-loader/webpack.config.js",
+    "build:jsmoderno": "webpack --config ./jsmoderno/webpack.config.js"
   },
   "keywords": [
     "webpack"
