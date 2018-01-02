@@ -92,6 +92,16 @@ console.log("Hola, este es un archivo con js moderno");
 "use strict";
 
 
+var _renderToDom = __webpack_require__(3);
+
+var _renderToDom2 = _interopRequireDefault(_renderToDom);
+
+var _makeMessage = __webpack_require__(4);
+
+var _makeMessage2 = _interopRequireDefault(_makeMessage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var waitTime = new Promise(function (todoOk, todoNok) {
   setTimeout(function () {
     todoOk('Han pasado 3 segundo omg');
@@ -103,8 +113,40 @@ module.exports = {
   delayedMessage: async function delayedMessage() {
     var message = await waitTime;
     console.log(message);
+    //const element = document.createElement('p')
+    //element.textContent = message;
+    (0, _renderToDom2.default)((0, _makeMessage2.default)(message));
   }
 };
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function renderToDOM(element) {
+  document.body.append(element);
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function makeMessage(msg) {
+  var element = document.createElement('p');
+  element.textContent = msg;
+  return element;
+}
+
+exports.default = makeMessage;
 
 /***/ })
 /******/ ]);
