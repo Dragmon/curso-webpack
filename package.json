@@ -16,7 +16,8 @@
     "build:jsmoderno": "webpack --config ./jsmoderno/webpack.config.js",
     "build:images": "webpack --config ./url-loader-images/webpack.config.js",
     "build:fonts": "webpack --config ./url-loader-fonts/webpack.config.js",
-    "build:videos": "webpack --config ./url-loader-videos/webpack.config.js"
+    "build:videos": "webpack --config ./file-loader-videos/webpack.config.js",
+    "build:json": "webpack --config ./json-loader/webpack.config.js"
   },
   "keywords": [
     "webpack"
@@ -31,6 +32,7 @@
     "css-loader": "0.28.7",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.6",
+    "json-loader": "0.5.7",
     "style-loader": "0.19.1",
     "url-loader": "0.6.2",
     "webpack": "3.10.0",
