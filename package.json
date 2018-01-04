@@ -18,7 +18,8 @@
     "build:fonts": "webpack --config ./url-loader-fonts/webpack.config.js",
     "build:videos": "webpack --config ./file-loader-videos/webpack.config.js",
     "build:json": "webpack --config ./json-loader/webpack.config.js",
-    "build:react": "webpack --config ./react/webpack.config.js"
+    "build:react": "webpack --config ./react/webpack.config.js",
+    "build:prevent": "webpack --config ./prevent-duplication/webpack.config.js"
   },
   "keywords": [
     "webpack"
